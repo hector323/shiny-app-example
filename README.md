@@ -9,8 +9,8 @@ library(shiny)
 runGitHub("shiny_example", "rstudio")
 
 # Run a tar or zip file directly
-runUrl("https://github.com/rstudio/shiny_example/archive/master.tar.gz")
-runUrl("https://github.com/rstudio/shiny_example/archive/master.zip")
+runUrl("https://github.com/rstudio/shiny_example/archive/main.tar.gz")
+runUrl("https://github.com/rstudio/shiny_example/archive/main.zip")
 ```
 
 Clone the git repository, then use `runApp()`:
@@ -28,5 +28,5 @@ To run a Shiny app from a subdirectory in the repo or zip file, you can use the 
 ```R
 runGitHub("shiny_example", "rstudio", subdir = "inst/shinyapp/")
 
-runUrl("https://github.com/rstudio/shiny_example/archive/master.tar.gz",
+runUrl("https://github.com/rstudio/shiny_example/archive/main.tar.gz",
   subdir = "inst/shinyapp/")
